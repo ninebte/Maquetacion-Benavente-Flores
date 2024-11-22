@@ -1,0 +1,2248 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
+}
+
+/*---------------------------------------
+Estilos para pantallas entre 1025 y MONITOR --->
+-----------------------------------------*/
+@media screen and (min-width: 1025px) /*mayores de 1025*/ {
+  body {
+    margin: 0 auto;
+    height: 1024px;
+    width: 1440px;
+    font-family: Roboto;
+  }
+
+  .header {
+    height: 135px;
+    width: 1440px;
+    background-color: #004a98;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .cuadroContHeader {
+    position: relative;
+    width: 95%;
+    height: 70%;
+    border: 0px solid black;
+  }
+
+  .logo1 {
+    position: relative;
+    top: 22px;
+    height: 47px;
+    width: 123px;
+    border: 0px solid black;
+    background-image: url("../imagenes/logo1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .logo2 {
+    position: relative;
+    top: -27px;
+    left: 160px;
+    height: 48px;
+    width: 141px;
+    border: 0px solid black;
+    background-image: url("../imagenes/logo2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .tituloHeader {
+    position: relative;
+    top: -77px;
+    left: 340px;
+    width: 663px;
+    height: 47;
+    border: 0px solid black;
+    color: white;
+    font-family: Roboto;
+    font-size: 40px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .iconoUser {
+    position: relative;
+    top: -126px;
+    left: 1150px;
+    width: 65px;
+    height: 47px;
+    color: #d8d8d8;
+    border: 0px solid black;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  .iconoUser i {
+    font-size: 40px; /* Ajusta el tamaño del icono según sea necesario */
+  }
+
+  .botonHambu {
+    position: relative;
+    top: -174px;
+    left: 1250px;
+    width: 48px;
+    height: 48px;
+    border: 0px solid black;
+    color: white;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .botonHambu i {
+    font-size: 48px;
+  }
+  /* Cards */
+  .containerCard {
+    margin-top: 80px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    column-gap:16px;
+    row-gap: 80px;
+    justify-content: center; /* Asegura que el contenido esté centrado */
+    align-items: start;
+  }
+
+  .card {
+    width: 302px;
+    height: 241px;
+    border-radius: 10px;
+    background-color: #e8e5e5;
+  }
+
+  .tituloCard {
+    font-size: 20px;
+    text-align: center;
+    color: #004a98;
+  }
+
+  img {
+    width: 113px;
+    height: 69px;
+    margin-top: -5px;
+    align-items: center;
+    margin-left: 95px;
+    border-radius: 5px;
+    border: 1px solid #004A98;
+  }
+
+  img i {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+    color: #004a98;
+  }
+  .icon-list {
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    padding: 0;
+    text-align: center;
+  }
+
+  .icon-list-item i {
+    color: #004a98;
+  }
+
+  .icon-list-item .text-style {
+    font-size: 18px; /* Adjust the font size */
+    font-family: Roboto; /* Change the font family */
+    color: #004a98; /* Change the text color */
+  }
+
+  .tituloPorcentaje {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 25px;
+    color: #004a98;
+  }
+
+  .barra-verde {
+    width: 80%;
+    height: 10px;
+    background-color: green;
+    margin-left: 0px;
+    border-radius: 5px;
+  }
+  .barra-blanca {
+    width: 70%;
+    height: 10px;
+    margin-left: 45px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  /* NAVBAR */
+  .containerBotones {
+    width: 1061px;
+    height: 50px;
+    margin-top: 75px;
+    margin-left: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .btnCursos,
+  .btnAlumnos,
+  .btnChat,
+  .btnMaterial,
+  .btnTareas {
+    width: 193px;
+    height: 50px;
+    background: white;
+    color: #004a98;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .btnCursos.clicked,
+  .btnAlumnos.clicked,
+  .btnChat.clicked,
+  .btnMaterial.clicked,
+  .btnTareas.clicked {
+    background: #004a98;
+    color: white;
+  }
+
+  .icon-list-item2 .text-style {
+    font-size: 24px;
+    font-family: Roboto;
+    color: #004a98;
+  }
+
+  .icon-list-item2 i {
+    font-size: 25px;
+  }
+
+  .icon-list2 {
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    padding: 0;
+    text-align: left;
+  }
+
+  .icon-list-item2 i {
+    margin-left: 190px; /* Optional: Adjust space between icon and text */
+    margin-top: 50px;
+  }
+  .containerDetAct {
+    width: 1061px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 75px;
+  }
+
+  .btnDetalle,
+  .btnCodigo {
+    width: 302px;
+    height: 50px;
+    background: white;
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  .btnPorcentaje {
+    width: 302px;
+    height: 50px;
+    background: white;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  .btnPorcentaje2 {
+    width: 270px;
+    height: 50px;
+    background: rgb(124, 185, 124);
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .containerRegreso a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto original */
+}
+
+  .listaDivTemas {
+    display: flex;
+    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    margin-left: 130px;
+  }
+
+  .listaCardsTemas {
+    position: relative;
+    margin-top: 60px;
+    margin-right: 110px;
+    height: 419px;
+    width: 496px;
+    color: white;
+    border: 1px solid black;
+    text-align: left;
+    background-color: #003885; /* Azul más oscuro para el div */
+    padding: 20px 30px;
+    flex: 1;
+  }
+
+  .listaCardsTemas h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .listaCardsTemas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin-bottom: 0px;
+  }
+
+  .listaCardsTemas ul {
+    list-style: none; /* Elimina los bullets predeterminados */
+    padding: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin: 0;
+  }
+
+  .listaCardsTemas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+  }
+
+  .check {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: #003885;
+    background-color: white;
+    font-size: 18px;
+    height: 17px;
+    width: 18px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animación para cambio de estado */
+  }
+
+  .check.unchecked {
+    color: white;
+    background-color: white; /* Fondo gris para destacar */
+    border: 1px solid black;
+  }
+
+  .containerNumPag {
+    width: 405px;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 517px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btnFI,
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4,
+  .btnFD {
+    width: 55px;
+    height: 55px;
+    background: white;
+    color: #004a98;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid rgb(161, 161, 161);
+  }
+
+  .btnFI.clicked,
+  .btn1.clicked,
+  .btn2.clicked,
+  .btn3.clicked,
+  .btn4.clicked,
+  .btnFD.clicked {
+    background: #004a98;
+    color: white;
+  }
+
+  .tablaBaseDiv {
+    position: relative;
+    width: 1280px; /* Ancho fijo para el contenedor */
+    margin-top: 40px; /* Si deseas separar la tabla de otros elementos */
+    margin-left: 100px;
+  }
+
+  .tablaBase {
+    width: 100%; /* Ancho de la tabla debe ocupar el 100% del contenedor */
+    table-layout: fixed; /* Hace que las celdas ocupen todo el ancho disponible */
+    border-spacing: 20px; /* Espacio entre celdas */
+    border-bottom: 0px solid #e8e5e5;
+    font-family: Roboto;
+    font-size: 24px;
+  }
+
+  .nombre-abreviadoT,
+  .nombre-abreviadoC,
+  .carrera-abreviadoT,
+  .tabletVersCF,
+  .tabletRegistro,
+  .tabletVerOpci{
+    display:none;
+  }
+
+  th,
+  td {
+    padding: 6px;
+    color: #004a98;
+    text-align: center;
+    word-wrap: break-word; /* Asegura que el contenido largo se ajuste dentro de las celdas */
+  }
+
+  td {
+    border-bottom: 1px solid #e8e5e5;
+    border-top: 1px solid #e8e5e5;
+  }
+
+  th {
+    background-color: white;
+  }
+
+
+  .icono {
+    margin: 0 10px; /* Espaciado horizontal entre iconos */
+    font-size: 18px; /* Tamaño de los iconos */
+    cursor: pointer; /* Cambia el cursor cuando pasas sobre los iconos */
+}
+
+.icono:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+}
+
+  .contacts-sidebar {
+    width: 303px;
+    background-color: white;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    overflow-y: auto;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.contacts-header {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+.contact-item:hover {
+    background-color: #f8f8f8;
+}
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.contact-name {
+    font-weight: bold;
+}
+
+/* Chat */
+.containerChat{
+  display: flex;
+  width: 1063px;
+  height: 646px;
+  margin-top: 60px;
+  margin-left: 180px;
+  border: 2px solid #004a98;
+}
+
+.search-container {
+  padding: 16px;
+  height: 60px!important;
+  background-color: #004a98;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  flex-grow: 2;
+  border: none;
+  border-radius: 4px;
+  background-color: #004a98;
+  color: white !important;
+  font-size: 24px;
+  width: 10px;
+  text-align: center;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.contacts-sidebar {
+  width: 303px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: white;
+  border-right: 1px solid #004a98;
+  height: 646px;
+  overflow-y: auto;
+}
+.contacts-header {
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #004a98;
+  border-left: 1px solid #004a98;
+  cursor: pointer;
+}
+.contact-item:hover {
+  color: white!important;
+  background-color: rgba(0, 74, 152, 0.5); /* Fondo semitransparente */
+}
+
+.contact-name:hover {
+  color: white!important;
+}
+
+.contact-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.contact-name {
+  /* font-weight: bold; */
+  font-size: 12px;
+  color:#004a98;
+  text-align: center;
+}
+
+.chat-container {
+width: 760px !important;
+background-color: white;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+border: 1px solid #004a98;
+}
+.chat-header {
+  height: 71px;
+background-color: white;
+color: #004a98;
+border-bottom: 1px solid #004a98;
+justify-content: center; 
+align-items: center; 
+padding: 10px;
+text-align: center;
+display: flex;           
+text-align: center; 
+}
+.chat-messages {
+height: 460px;
+overflow-y: auto;
+padding: 10px;
+margin-top: 20px;
+}
+.message {
+margin-bottom: 10px;
+padding: 8px 12px;
+border-radius: 5px;
+max-width: 70%;
+}
+.bot-message {
+background-color: #e9e9eb;
+align-self: flex-start;
+font-size: 12px;
+}
+.user-message {
+background-color: #004a98;
+color: white;
+align-self: flex-end;
+margin-left: auto;
+font-size: 12px;
+}
+.chat-input {
+display: flex;
+padding: 10px;
+border-top: 1px solid #004a98;
+}
+.chat-input input {
+flex-grow: 1;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+color:#004a98 !important;
+width: 24px;
+height: 24px; 
+}
+.chat-input button {
+padding: 0px 0px;
+color: white;
+border: none;
+border-radius: 4px;
+margin-left: 8px;
+cursor: pointer;
+width: 24px;
+height: 24px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido principal horizontalmente */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 95%;
+  position: relative; /* Para manejar la posición del avatar */
+}
+
+.chat-avatar {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: absolute; /* Posición absoluta dentro de .chat-item */
+  left: 20px; /* Asegura que quede pegado al lado izquierdo */
+}
+
+.chat-name {
+  font-size: 24px;
+  color: #004a98;
+  text-align: center;
+  flex: 1; /* Ocupa el espacio restante para centrar */
+}
+
+.containerTeclado{
+  display: none;
+}
+
+}
+
+/*---------------------------------------
+Estilos para pantallas entre 680px y 1024px (TABLETAS)
+-----------------------------------------*/
+@media screen and (min-width: 680px) and (max-width: 1024px) {
+  body {
+    width: 744px;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Roboto;
+  }
+
+  .header {
+    height: 135px;
+    width: 744px;
+    background-color: #004a98;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .cuadroContHeader {
+    position: relative;
+    width: 95%;
+    height: 70%;
+    border: 0px solid black;
+  }
+
+  .logo1 {
+    position: relative;
+    top: 22px;
+    left: 160px;
+    height: 47px;
+    width: 123px;
+    border: 0px solid black;
+    background-image: url("../imagenes/logo1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .logo2 {
+    position: relative;
+    top: -27px;
+    left: 20px;
+    height: 48px;
+    width: 141px;
+    border: 0px solid black;
+    background-image: url("../imagenes/logo2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .tituloHeader {
+    position: relative;
+    top: -77px;
+    left: 300px;
+    width: 335px;
+    height: 46px;
+    border: 0px solid black;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .iconoUser {
+    display: none;
+    position: relative;
+    top: -126px;
+    left: 1150px;
+    width: 65px;
+    height: 47px;
+    color: #d8d8d8;
+    border: 0px solid black;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  .iconoUser i {
+    font-size: 40px; /* Ajusta el tamaño del icono según sea necesario */
+  }
+
+  .botonHambu {
+    position: relative;
+    top: -174px;
+    left: 640px;
+    width: 48px;
+    height: 48px;
+    border: 0px solid black;
+    color: white;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .botonHambu i {
+    font-size: 48px;
+  }
+  /* Cards */
+  .containerCard {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* Ajusta al tamaño de la tablet */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-gap: 50px; /* Espaciado entre las tarjetas */
+    overflow-y: scroll; /* Habilitar scroll vertical */
+    height: 100%; /* Ajusta al tamaño de la pantalla */
+    max-height: 744px; /* Altura máxima para tablets */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+  }
+  
+  .card {
+    width: 100%; /* Ajusta automáticamente al tamaño del contenedor */
+    height: 241px;
+    border-radius: 10px;
+    background-color: #e8e5e5;
+  }
+  
+  .tituloCard {
+    font-size: 20px;
+    text-align: center;
+    color: #004a98;
+  }
+  
+  img {
+    width: 113px;
+    height: 69px;
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .icon-list {
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    padding: 0;
+    text-align: center;
+  }
+  
+  .icon-list-item i {
+    color: #004a98;
+  }
+  
+  .icon-list-item .text-style {
+    font-size: 18px; /* Ajusta el tamaño de fuente */
+    font-family: Roboto; /* Cambia la familia de fuente */
+    color: #004a98; /* Cambia el color del texto */
+  }
+  
+  .tituloPorcentaje {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 25px;
+    color: #004a98;
+  }
+  
+  .barra-verde {
+    width: 80%;
+    height: 10px;
+    background-color: green;
+    border-radius: 5px;
+  }
+  
+  .barra-blanca {
+    width: 70%;
+    height: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  /* NAVBAR */
+  .containerBotones {
+    width: 736px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .btnCursos,
+  .btnAlumnos,
+  .btnChat,
+  .btnMaterial,
+  .btnTareas {
+    width: 128px;
+    height: 30px;
+    background: white;
+    color: #004a98;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  .btnCursos.clicked,
+  .btnAlumnos.clicked,
+  .btnChat.clicked,
+  .btnMaterial.clicked,
+  .btnTareas.clicked {
+    background: #004a98;
+    color: white;
+  }
+
+  .icon-list-item2 .text-style {
+    font-size: 24px;
+    font-family: Roboto;
+    color: #004a98;
+  }
+
+  .icon-list-item2 i {
+    font-size: 25px;
+  }
+
+  /* Flecha y Detalles */
+  .icon-list2 {
+    width: 302px;
+    height: 40px;
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    padding: 5px;
+    margin-top: 60px;
+    margin-left: 25px;
+    text-align: center; /* Centra horizontalmente el texto */
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+  .icon-list-item2 i {
+    display: none;
+    margin-left: 190px; /* Optional: Adjust space between icon and text */
+    margin-top: 50px;
+  }
+
+  /* Barras de Titulos */
+  .containerDetAct {
+    width: auto;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas */
+    grid-template-rows: auto auto; /* Crea 2 filas */
+    grid-gap: 10px; /* Espacio entre los elementos */
+  }
+  
+  .btnDetalle {
+    grid-column: 1; /* Coloca el primer div en la primera columna */
+    grid-row: 1; /* Coloca el primer div en la primera fila */
+    width: 302px;
+    height: 40px;
+    background: white;
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  
+  .btnCodigo {
+    grid-column: 2; /* Coloca el segundo div en la segunda columna */
+    grid-row: 1; /* Coloca el segundo div en la primera fila */
+    width: 302px;
+    height: 40px;
+    background: white;
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  
+  .btnPorcentaje {
+    grid-column: 1 / 3; /* Coloca el tercer div a través de ambas columnas */
+    grid-row: 2; /* Coloca el tercer div en la segunda fila */
+    width: 302px;
+    height: 40px;
+    margin-left: 180px;
+    background: white;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  
+  .btnPorcentaje2 {
+    width: 270px;
+    height: 40px;
+    background: white;
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }  
+
+  .containerRegreso a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto original */
+}
+
+  /* LISTAS DE TEMAS */
+  .listaDivTemas {
+    display: flex;
+    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    margin-left: 110px;
+    overflow-y: auto; /* Permite el scroll vertical en el contenedor */
+    height: 500px; /* Definir el alto fijo para el contenedor */
+  }
+  
+  .listaCardsTemas {
+    position: relative;
+    margin-top: 60px;
+    margin-right: 110px;
+    height: 419px;
+    width: 496px;
+    color: white;
+    border: 1px solid black;
+    text-align: left;
+    background-color: #003885; /* Azul más oscuro para el div */
+    padding: 20px 30px;
+    flex: 1;
+  }
+  
+  .listaCardsTemas h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .listaCardsTemas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin-bottom: 0px;
+  }
+  
+  .listaCardsTemas ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin: 0;
+  }
+  
+  .listaCardsTemas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+  }
+  
+  .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003885;
+    background-color: white;
+    font-size: 18px;
+    height: 17px;
+    width: 18px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .check.unchecked {
+    color: white;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+
+  /* Contenedor Numerador */
+  .containerNumPag {
+    width: 405px;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 168px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btnFI,
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4,
+  .btnFD {
+    width: 55px;
+    height: 55px;
+    background: white;
+    color: #004a98;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid rgb(161, 161, 161);
+  }
+
+  .btnFI.clicked,
+  .btn1.clicked,
+  .btn2.clicked,
+  .btn3.clicked,
+  .btn4.clicked,
+  .btnFD.clicked {
+    background: #004a98;
+    color: white;
+  }
+  /* TablasBases */
+  .tablaBaseDiv {
+    position: relative;
+    width: 680px; /* Ancho fijo para el contenedor */
+    margin-top: 40px; /* Si deseas separar la tabla de otros elementos */
+    margin-left: 35px;
+  }
+
+  .tablaBase {
+    width: 100%; /* Ancho de la tabla debe ocupar el 100% del contenedor */
+    table-layout: fixed; /* Hace que las celdas ocupen todo el ancho disponible */
+    border-spacing: 30px; /* Espacio entre celdas */
+    border-bottom: 0px solid #e8e5e5;
+    font-family: Roboto;
+    font-size: 18px;
+  }
+
+  .nombre-completo,
+  .nombre-abreviadoC,
+  .carrera-completa,
+  .dsVersCF,
+  .dsVerOpci{
+    display:none;
+  }
+
+  th,
+  td {
+    padding: 3px;
+    color: #004a98;
+    text-align: center;
+    word-wrap: break-word; /* Asegura que el contenido largo se ajuste dentro de las celdas */
+  }
+
+  td {
+    border-bottom: 1px solid #e8e5e5;
+    border-top: 1px solid #e8e5e5;
+  }
+
+  th {
+    background-color: white;
+  }
+
+  .tabletVersCF{
+    font-size: 15px;
+  }
+
+
+  .icono {
+    margin: 0 10px; /* Espaciado horizontal entre iconos */
+    font-size: 25px; /* Tamaño de los iconos */
+    cursor: pointer; /* Cambia el cursor cuando pasas sobre los iconos */
+}
+
+.icono.E{
+  display: none;
+}
+
+.icono:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+}
+
+  .contacts-sidebar {
+    width: 303px;
+    background-color: white;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    overflow-y: auto;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.contacts-header {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+.contact-item:hover {
+    background-color: #f8f8f8;
+}
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.contact-name {
+    font-weight: bold;
+}
+
+/* Chat */
+.containerChat{
+  display: flex;
+  width: 660px;
+  height: 520px;
+  margin-top: 40px;
+  margin-left: 30px;
+  border: 2px solid #004a98;
+}
+
+.search-container {
+  padding: 5px;
+  height: 48px;
+  background-color: #004a98;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  flex-grow: 2;
+  border: none;
+  border-radius: 4px;
+  background-color: #004a98;
+  color: white !important;
+  font-size: 18px;
+  width: 10px;
+  text-align: center;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.contacts-sidebar {
+  width: 188px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: white;
+  border-right: 1px solid #004a98;
+  height: 520px;
+  overflow-y: auto;
+}
+.contacts-header {
+  padding: 2px;
+  background-color: #007bff;
+  color: white;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #004a98;
+  border-left: 1px solid #004a98;
+  cursor: pointer;
+}
+.contact-item:hover {
+  color: white!important;
+  background-color: rgba(0, 74, 152, 0.5); /* Fondo semitransparente */
+}
+
+.contact-name:hover {
+  color: white!important;
+}
+
+.contact-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.contact-name {
+  font-size: 12px;
+  color:#004a98;
+  text-align: center;
+}
+
+.chat-container {
+width: 760px !important;
+background-color: white;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+border: 1px solid #004a98;
+}
+.chat-header {
+  height: 48px;
+background-color: white;
+color: #004a98;
+border-bottom: 1px solid #004a98;
+justify-content: center; 
+align-items: center; 
+padding: 4px;
+text-align: center;
+display: flex;           
+text-align: center; 
+}
+.chat-messages {
+height: 370px;
+overflow-y: auto;
+padding: 10px;
+margin-top: 20px;
+}
+.message {
+margin-bottom: 10px;
+padding: 8px 12px;
+border-radius: 5px;
+max-width: 70%;
+}
+.bot-message {
+background-color: #e9e9eb;
+align-self: flex-start;
+font-size: 12px;
+}
+.user-message {
+background-color: #004a98;
+color: white;
+align-self: flex-end;
+margin-left: auto;
+font-size: 12px;
+}
+.chat-input {
+display: flex;
+padding: 10px;
+border-top: 1px solid #004a98;
+}
+.chat-input input {
+flex-grow: 1;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+color:#004a98 !important;
+width: 24px;
+height: 24px; 
+}
+.chat-input button {
+padding: 0px 0px;
+color: white;
+border: none;
+border-radius: 4px;
+margin-left: 8px;
+cursor: pointer;
+width: 24px;
+height: 24px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido principal horizontalmente */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 95%;
+  position: relative; /* Para manejar la posición del avatar */
+}
+
+.chat-avatar {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: absolute; /* Posición absoluta dentro de .chat-item */
+  left: 20px; /* Asegura que quede pegado al lado izquierdo */
+}
+
+.chat-name {
+  font-size: 18px;
+  color: #004a98;
+  text-align: center;
+  flex: 1; /* Ocupa el espacio restante para centrar */
+}
+
+ /* teclado */
+ .containerTeclado {
+  background-color: rgb(189, 189, 189);
+  width: 744px;
+  height: 338px;
+} 
+.keyboard {
+   margin-top: 13px;
+   width: 744px;
+   /* height: 338px; */
+   /* background-color: #e0e0e0; */
+   border-radius: 6px;
+   /* padding: 5px; */
+   /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+.row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 5px;
+}
+.key {
+   width: 57px;
+   height: 57px;
+   background-color: #ffffff;
+   border: 1px solid #cccccc;
+   border-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+   cursor: pointer;
+   user-select: none;
+}
+.key:hover {
+   background-color: #f0f0f0;
+}
+.key:active {
+   background-color: #e0e0e0;
+}
+.space {
+   width: 350px;
+}
+.wide {
+   width: 35px;
+}
+.extra-wide {
+   width: 94px;
+}
+}
+
+/*---------------------------------------
+Estilos para pantallas entre 1px y 679px MOVIL --->
+-----------------------------------------*/
+@media screen and (min-width: 0px) and (max-width: 679px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  body {
+    width: 375px;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Roboto;
+  }
+
+  .header {
+    height: 135px;
+    width: 375px;
+    background-color: #004a98;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .cuadroContHeader {
+    position: relative;
+    width: 95%;
+    height: 70%;
+    border: 0px solid black;
+  }
+
+  .logo1 {
+    position: relative;
+    top: 22px;
+    left: 10px;
+    height: 47px;
+    width: 41px;
+    border: 0px solid black;
+    background-image: url("../imagenes/logo1.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  .logo2 {
+    position: relative;
+    top: -27px;
+    left: 65px;
+    height: 48px;
+    width: 42px;
+    border: 0px solid black;
+    background-image: url("../imagenes/logo2.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  .tituloHeader {
+    position: relative;
+    top: -77px;
+    left: 110px;
+    width: 175px;
+    height: 46px;
+    border: 0px solid black;
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .iconoUser {
+    display: none;
+    position: relative;
+    top: -126px;
+    left: 1150px;
+    width: 65px;
+    height: 47px;
+    color: #d8d8d8;
+    border: 0px solid black;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  .iconoUser i {
+    font-size: 40px; /* Ajusta el tamaño del icono según sea necesario */
+  }
+
+  .botonHambu {
+    position: relative;
+    top: -174px;
+    left: 290px;
+    width: 48px;
+    height: 48px;
+    border: 0px solid black;
+    color: white;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .botonHambu i {
+    font-size: 48px;
+  }
+  /* Cards */
+  .containerCard {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* Ajusta al tamaño de la tablet */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px; /* Espaciado entre las tarjetas */
+    overflow-y: scroll; /* Habilitar scroll vertical */
+    height: 100%; /* Ajusta al tamaño de la pantalla */
+    max-height: 375px; /* Altura máxima para tablets */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+  }
+  
+  .card {
+    width: 100%; /* Ajusta automáticamente al tamaño del contenedor */
+    height: 241px;
+    border-radius: 10px;
+    background-color: #e8e5e5;
+  }
+  
+  .tituloCard {
+    font-size: 20px;
+    text-align: center;
+    color: #004a98;
+  }
+  
+  img {
+    width: 113px;
+    height: 69px;
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .icon-list {
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    padding: 0;
+    text-align: center;
+  }
+  
+  .icon-list-item i {
+    color: #004a98;
+  }
+  
+  .icon-list-item .text-style {
+    font-size: 18px; /* Ajusta el tamaño de fuente */
+    font-family: Roboto; /* Cambia la familia de fuente */
+    color: #004a98; /* Cambia el color del texto */
+  }
+  
+  .tituloPorcentaje {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 25px;
+    color: #004a98;
+  }
+  
+  .barra-verde {
+    width: 80%;
+    height: 10px;
+    background-color: green;
+    border-radius: 5px;
+  }
+  
+  .barra-blanca {
+    width: 70%;
+    height: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+/* NAVBAR */
+.containerBotones {
+  width: 375px;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  grid-template-rows: auto auto; /* Dos filas */
+  gap: 20px;
+}
+
+/* Botones */
+.btnCursos,
+.btnAlumnos,
+.btnChat,
+.btnMaterial,
+.btnTareas {
+  width: 100px;
+  height: 25px;
+  background: white;
+  color: #004a98;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 1px solid rgb(161, 161, 161);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Para cuando los botones son clickeados */
+.btnCursos.clicked,
+.btnAlumnos.clicked,
+.btnChat.clicked,
+.btnMaterial.clicked,
+.btnTareas.clicked {
+  background: #004a98;
+  color: white;
+}
+
+/* Ajuste para la fila superior (botones 1, 2 y 3) */
+.btnCursos {
+  grid-column: 1; /* Primer columna */
+  grid-row: 1; /* Fila 1 */
+}
+
+.btnAlumnos {
+  margin-left: -60px;
+  grid-column: 2; /* Segunda columna */
+  grid-row: 1; /* Fila 1 */
+}
+
+.btnTareas {
+  margin-left: -60px;
+  grid-column: 3; /* Tercer columna */
+  grid-row: 1; /* Fila 1 */
+}
+
+.btnMaterial {
+  margin-left: 60px;
+  grid-column: 1; /* Segunda columna */
+  grid-row: 2; /* Fila 2 */
+}
+/* Ajuste para la fila inferior (botones 4 y 5) */
+.btnChat {
+  grid-column: 2; /* Primera columna */
+  grid-row: 2; /* Fila 2 */
+}
+
+  /* Flecha y Detalles */
+  .containerRegreso{
+    display: none;
+  }
+  
+  .icon-list2 {
+    width: 100px;
+    height: 40px;
+    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    padding: 5px;
+    margin-top: 60px;
+    margin-left: 25px;
+    text-align: center; /* Centra horizontalmente el texto */
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+  .icon-list-item2 i {
+    display: none;
+    margin-left: 190px; /* Optional: Adjust space between icon and text */
+    margin-top: 50px;
+  }
+
+  /* Barras de Titulos */
+  .containerDetAct {
+    display: none;
+    width: auto;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 25px;
+    
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas */
+    grid-template-rows: auto auto; /* Crea 2 filas */
+    grid-gap: 10px; /* Espacio entre los elementos */
+  }
+
+  
+  .btnDetalle {
+    grid-column: 1; /* Coloca el primer div en la primera columna */
+    grid-row: 1; /* Coloca el primer div en la primera fila */
+    width: 302px;
+    height: 40px;
+    background: white;
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  
+  .btnCodigo {
+    grid-column: 2; /* Coloca el segundo div en la segunda columna */
+    grid-row: 1; /* Coloca el segundo div en la primera fila */
+    width: 302px;
+    height: 40px;
+    background: white;
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  
+  .btnPorcentaje {
+    grid-column: 1 / 3; /* Coloca el tercer div a través de ambas columnas */
+    grid-row: 2; /* Coloca el tercer div en la segunda fila */
+    width: 302px;
+    height: 40px;
+    margin-left: 180px;
+    background: white;
+    border-radius: 5px;
+    border-bottom: 4px solid #004a98;
+  }
+  
+  .btnPorcentaje2 {
+    width: 270px;
+    height: 40px;
+    background: white;
+    color: #004a98;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }  
+
+  /* LISTAS DE TEMAS */
+  .listaDivTemas {
+    display: flex;
+    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    margin-left: 50px;
+    overflow-y: auto; /* Permite el scroll vertical en el contenedor */
+    height: 419px; /* Definir el alto fijo para el contenedor */
+  }
+  
+  .listaCardsTemas {
+    position: relative;
+    margin-top: 60px;
+    margin-right: 35px;
+    height: 419px;
+    width: 288px;
+    color: white;
+    border: 1px solid black;
+    text-align: left;
+    background-color: #003885; /* Azul más oscuro para el div */
+    flex: 1;
+  }
+  
+  .listaCardsTemas h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .listaCardsTemas h3 {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin-bottom: 0px;
+  }
+  
+  .listaCardsTemas ul {
+    list-style: none;
+    padding: 12px;
+    font-weight: bold;
+    font-family: Roboto;
+    margin: 0;
+  }
+  
+  .listaCardsTemas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+  }
+  
+  .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003885;
+    background-color: white;
+    font-size: 18px;
+    height: 24px;
+    width: 24px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .check.unchecked {
+    color: white;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+
+  /* Contenedor Numerador */
+  .containerNumPag {
+    width: 276px;
+    height: 32px;
+    margin-top: 37px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btnFI,
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4,
+  .btnFD {
+    width: 37px;
+    height: 32px;
+    background: white;
+    color: #004a98;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid rgb(161, 161, 161);
+  }
+
+  .btnFI.clicked,
+  .btn1.clicked,
+  .btn2.clicked,
+  .btn3.clicked,
+  .btn4.clicked,
+  .btnFD.clicked {
+    background: #004a98;
+    color: white;
+  }
+  /* TablasBases */
+  .tablaBaseDiv {
+    position: relative;
+    width: 375px; /* Ancho fijo para el contenedor */
+    margin-top: 20px; /* Si deseas separar la tabla de otros elementos */
+    margin-left: 0px;
+  }
+
+  .tablaBase {
+    width: 100%; /* Ancho de la tabla debe ocupar el 100% del contenedor */
+    table-layout: fixed; /* Hace que las celdas ocupen todo el ancho disponible */
+    border-spacing: 3px; /* Espacio entre celdas */
+    border-bottom: 0px solid #e8e5e5;
+    font-family: Roboto;
+    font-size: 12px;
+  }
+
+  .nombre-completo,
+  .nombre-abreviadoT,
+  .carrera-completa,
+  .dsVersCF,
+  .dsVerOpci{
+    display:none;
+  }
+
+  th,
+  td {
+    padding: 11px;
+    color: #004a98;
+    text-align: center;
+    word-wrap: break-word; /* Asegura que el contenido largo se ajuste dentro de las celdas */
+  }
+
+  td {
+    border-bottom: 1px solid #e8e5e5;
+    border-top: 1px solid #e8e5e5;
+  }
+
+  th {
+    background-color: white;
+  }
+
+  .tabletVersCF{
+    font-size: 8px;
+  }
+
+
+  .icono {
+    margin: 0 10px; /* Espaciado horizontal entre iconos */
+    font-size: 20px; /* Tamaño de los iconos */
+    cursor: pointer; /* Cambia el cursor cuando pasas sobre los iconos */
+}
+
+.icono.E{
+  display: none;
+}
+
+.icono:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+}
+
+  .contacts-sidebar {
+    width: 303px;
+    background-color: white;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    overflow-y: auto;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.contacts-header {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+.contact-item:hover {
+    background-color: #f8f8f8;
+}
+.contact-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.contact-name {
+    font-weight: bold;
+}
+
+/* Chat */
+.containerChat{
+  display: flex;
+  width: 325px;
+  height: 500px;
+  margin-top: 40px;
+  margin-left: 25px;
+  border: 2px solid #004a98;
+}
+
+.search-container {
+  padding: 8px;
+  width:auto;
+  height: 54px;
+  background-color: #004a98;
+  display: flex;
+  align-items: center;
+}
+.search-input {
+  flex-grow: 2;
+  border: none;
+  border-radius: 4px;
+  background-color: #004a98;
+  color: white !important;
+  font-size: 15px;
+  width: 10px;
+  text-align: center;
+}
+
+.search-input::placeholder {
+  color: white;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 60px;
+}
+.contacts-sidebar {
+  width: 324px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: white;
+  border-right: 1px solid #004a98;
+  height: 500px;
+  overflow-y: auto;
+}
+.contacts-header {
+  padding: 2px;
+  background-color: #007bff;
+  color: white;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-item {
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #004a98;
+  border-left: 1px solid #004a98;
+  cursor: pointer;
+}
+.contact-item:hover {
+  color: white!important;
+  background-color: rgba(0, 74, 152, 0.5); /* Fondo semitransparente */
+}
+
+.contact-name:hover {
+  color: white!important;
+}
+
+.contact-avatar {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+.contact-name {
+  font-size: 12px;
+  color:#004a98;
+  text-align: center;
+}
+
+.chat-container {
+width: 760px !important;
+background-color: white;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+border: 1px solid #004a98;
+}
+.chat-header {
+  height: 48px;
+background-color: white;
+color: #004a98;
+border-bottom: 1px solid #004a98;
+justify-content: center; 
+align-items: center; 
+padding: 4px;
+text-align: center;
+display: flex;           
+text-align: center; 
+}
+.chat-messages {
+height: 370px;
+overflow-y: auto;
+padding: 10px;
+margin-top: 20px;
+}
+.message {
+margin-bottom: 10px;
+padding: 8px 12px;
+border-radius: 5px;
+max-width: 70%;
+}
+.bot-message {
+background-color: #e9e9eb;
+align-self: flex-start;
+font-size: 12px;
+}
+.user-message {
+background-color: #004a98;
+color: white;
+align-self: flex-end;
+margin-left: auto;
+font-size: 12px;
+}
+.chat-input {
+display: flex;
+padding: 10px;
+border-top: 1px solid #004a98;
+}
+.chat-input input {
+flex-grow: 1;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+color:#004a98 !important;
+width: 24px;
+height: 24px; 
+}
+.chat-input button {
+padding: 0px 0px;
+color: white;
+border: none;
+border-radius: 4px;
+margin-left: 8px;
+cursor: pointer;
+width: 24px;
+height: 24px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido principal horizontalmente */
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 95%;
+  position: relative; /* Para manejar la posición del avatar */
+}
+
+.chat-avatar {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: absolute; /* Posición absoluta dentro de .chat-item */
+  left: 20px; /* Asegura que quede pegado al lado izquierdo */
+}
+
+.chat-name {
+  font-size: 18px;
+  color: #004a98;
+  text-align: center;
+  flex: 1; /* Ocupa el espacio restante para centrar */
+}
+
+.containerTeclado,
+.chat-container{
+  display: none;
+}
+
+}

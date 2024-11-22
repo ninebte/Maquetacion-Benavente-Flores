@@ -1,0 +1,183 @@
+<html>
+	<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/estilosCelular.css" />
+        <script type="text/javascript" src="JS/funcionalidad.js" ></script>
+	</head>
+
+    <body>
+        <div class="header">
+            <div class="cuadroContHeader">
+                <div class="Logo1">
+                
+                </div>
+                <div class="Logo2">
+                
+                </div>
+                <div class="tituloHeader"><b>Dashboard Profesor Mani</b></div>
+                <div class="iconoUser">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="botonHambu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- botones en linea -->
+        <div class="containerBotones">
+            <div class="btnCursos" onclick="cambiarColorYRedirigir('cursos.html', this)">
+                Cursos Activos
+            </div>
+            <div class="btnAlumnos" onclick="cambiarColorYRedirigir('alumnos.html', this)">
+                Alumnos
+            </div>
+            <div class="btnTareas" onclick="cambiarColorYRedirigir('tareas.html', this)">
+                Tareas
+            </div>
+            <div class="btnMaterial" onclick="cambiarColorYRedirigir('material.html', this)">
+                Material
+            </div>
+            <div class="btnChat" onclick="cambiarColorYRedirigir('chat.html', this)">
+                Chat
+            </div>
+        </div>
+
+        <div class="containerChat">
+            <div class="app-container">
+                <aside class="contacts-sidebar">
+                    <div class="search-container">
+                        <button class="search-button" aria-label="Search"></button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                        <input type="text" class="search-input" placeholder="Buscar" >
+                    </div>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                        <div class="contact-avatar">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="24"
+                            height="24"
+                            >
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                            />
+                            </svg>
+                        </div>
+                        <span class="contact-name">Alice Johnson</span>
+                        </li>
+                        <li class="contact-item">
+                        <div class="contact-avatar">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="24"
+                            height="24"
+                            >
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                            />
+                            </svg>
+                        </div>
+                        <span class="contact-name">Bob Smith</span>
+                        </li>
+                        <li class="contact-item">
+                        <div class="contact-avatar">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="24"
+                            height="24"
+                            >
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                            />
+                            </svg>
+                        </div>
+                        <span class="contact-name">Charlie Brown</span>
+                        </li>
+                        <li class="contact-item">
+                        <div class="contact-avatar">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="24"
+                            height="24"
+                            >
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                            />
+                            </svg>
+                        </div>
+                        <span class="contact-name">Diana Evans</span>
+                        </li>
+                        <li class="contact-item">
+                        <div class="contact-avatar">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="24"
+                            height="24"
+                            >
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                            />
+                            </svg>
+                        </div>
+                        <span class="contact-name">Ethan Hunt</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- Chat -->
+            <div class="chat-container">
+                <div class="chat-header">
+                    <li class="chat-item">
+                        <div class="chat-avatar">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            width="24"
+                            height="24"
+                            >
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                            />
+                            </svg>
+                        </div>
+                        <span class="chat-name">Ethan Hunt</span>
+                    </li>
+                </div>
+                <div class="chat-messages">
+                    <div class="message user-message">
+                        Hi there! I have a question about your services.
+                    </div>
+                    <div class="message bot-message">
+                        Hello! How can I assist you today?
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Escribir Mensaje" />
+                    <button>
+                        <?xml version="1.0" ?><svg aria-labelledby="sendIconTitle" color="#004a98" fill="none" height="18px" role="img" stroke="#2329D6" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><title id="sendIconTitle"/><polygon points="21.368 12.001 3 21.609 3 14 11 12 3 9.794 3 2.394"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
