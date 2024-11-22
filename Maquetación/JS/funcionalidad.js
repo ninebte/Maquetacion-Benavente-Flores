@@ -35,3 +35,8 @@ function cambiarColor(boton) {
     // Cambiar el color del botón al hacer clic
     boton.classList.add('clicked');
 }
+
+function navigateToCourse() {
+    window.location.href = "cursos.html";
+}
+
