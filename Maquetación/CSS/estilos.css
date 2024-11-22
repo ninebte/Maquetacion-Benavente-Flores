@@ -20,8 +20,8 @@ Estilos para pantallas entre 1025 y MONITOR --->
     width: 1440px;
     background-color: #004a98;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .cuadroContHeader {
@@ -67,8 +67,8 @@ Estilos para pantallas entre 1025 y MONITOR --->
     font-family: Roboto;
     font-size: 40px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .iconoUser {
@@ -79,12 +79,12 @@ Estilos para pantallas entre 1025 y MONITOR --->
     height: 47px;
     color: #d8d8d8;
     border: 0px solid black;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   .iconoUser i {
-    font-size: 40px; /* Ajusta el tamaño del icono según sea necesario */
+    font-size: 40px; 
   }
 
   .botonHambu {
@@ -95,9 +95,9 @@ Estilos para pantallas entre 1025 y MONITOR --->
     height: 48px;
     border: 0px solid black;
     color: white;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
 
   .botonHambu i {
@@ -108,10 +108,10 @@ Estilos para pantallas entre 1025 y MONITOR --->
     margin-top: 80px;
     margin-left: 40px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    grid-template-columns: repeat(4, 1fr); 
     column-gap:16px;
     row-gap: 80px;
-    justify-content: center; /* Asegura que el contenido esté centrado */
+    justify-content: center; 
     align-items: start;
   }
 
@@ -122,20 +122,46 @@ Estilos para pantallas entre 1025 y MONITOR --->
     background-color: #e8e5e5;
   }
 
+  .Card:hover {
+    width: 302px;
+    height: 241px;
+    border-radius: 10px;
+    background-color: #004a98;
+    color:#e8e5e5;
+  }
+
+  .Card:hover .tituloCard,
+  .Card:hover .icon-list-item,
+  .Card:hover .tituloPorcentaje,
+  .Card:hover .icon-list-item i,
+  .Card:hover .icon-list-item span{
+      color: #e8e5e5; 
+  }
+
   .tituloCard {
     font-size: 20px;
     text-align: center;
     color: #004a98;
   }
 
-  img {
+  .contenedorimagen{
     width: 113px;
     height: 69px;
     margin-top: -5px;
     align-items: center;
     margin-left: 95px;
     border-radius: 5px;
-    border: 1px solid #004A98;
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  img {
+    width: 54px;
+    height: 54px;
+    margin-top: 6px;
+    align-items: center;
+    margin-left: 30px;
+    border-radius: 5px;
   }
 
   img i {
@@ -145,7 +171,7 @@ Estilos para pantallas entre 1025 y MONITOR --->
     color: #004a98;
   }
   .icon-list {
-    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    list-style: none; 
     padding: 0;
     text-align: center;
   }
@@ -155,9 +181,9 @@ Estilos para pantallas entre 1025 y MONITOR --->
   }
 
   .icon-list-item .text-style {
-    font-size: 18px; /* Adjust the font size */
-    font-family: Roboto; /* Change the font family */
-    color: #004a98; /* Change the text color */
+    font-size: 18px; 
+    font-family: Roboto; 
+    color: #004a98; 
   }
 
   .tituloPorcentaje {
@@ -235,13 +261,13 @@ Estilos para pantallas entre 1025 y MONITOR --->
   }
 
   .icon-list2 {
-    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    list-style: none; 
     padding: 0;
     text-align: left;
   }
 
   .icon-list-item2 i {
-    margin-left: 190px; /* Optional: Adjust space between icon and text */
+    margin-left: 190px; 
     margin-top: 50px;
   }
   .containerDetAct {
@@ -289,12 +315,12 @@ Estilos para pantallas entre 1025 y MONITOR --->
 
   .containerRegreso a {
     text-decoration: none;
-    color: inherit; /* Mantiene el color del texto original */
+    color: inherit; 
 }
 
   .listaDivTemas {
     display: flex;
-    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    flex-wrap: wrap; 
     margin-left: 130px;
   }
 
@@ -307,7 +333,7 @@ Estilos para pantallas entre 1025 y MONITOR --->
     color: white;
     border: 1px solid black;
     text-align: left;
-    background-color: #003885; /* Azul más oscuro para el div */
+    background-color: #003885; 
     padding: 20px 30px;
     flex: 1;
   }
@@ -329,7 +355,7 @@ Estilos para pantallas entre 1025 y MONITOR --->
   }
 
   .listaCardsTemas ul {
-    list-style: none; /* Elimina los bullets predeterminados */
+    list-style: none; 
     padding: 20px;
     font-weight: bold;
     font-family: Roboto;
@@ -343,13 +369,13 @@ Estilos para pantallas entre 1025 y MONITOR --->
     font-size: 16px;
     margin-bottom: 10px;
     padding: 5px;
-    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); 
   }
 
   .check {
-    display: flex; /* Activa flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     color: #003885;
     background-color: white;
     font-size: 18px;
@@ -358,12 +384,12 @@ Estilos para pantallas entre 1025 y MONITOR --->
     font-weight: bold;
     border: 1px solid white;
     cursor: pointer;
-    transition: all 0.3s ease; /* Animación para cambio de estado */
+    transition: all 0.3s ease; 
   }
 
   .check.unchecked {
     color: white;
-    background-color: white; /* Fondo gris para destacar */
+    background-color: white; 
     border: 1px solid black;
   }
 
@@ -398,27 +424,28 @@ Estilos para pantallas entre 1025 y MONITOR --->
     border: 1px solid rgb(161, 161, 161);
   }
 
-  .btnFI.clicked,
-  .btn1.clicked,
-  .btn2.clicked,
-  .btn3.clicked,
-  .btn4.clicked,
-  .btnFD.clicked {
-    background: #004a98;
-    color: white;
+  .btnFI:hover,
+  .btn1:hover,
+  .btn2:hover,
+  .btn3:hover,
+  .btn4:hover,
+  .btnFD:hover {
+      background: #004a98; 
+      color: white; 
+      border-color: #004a98; 
   }
 
   .tablaBaseDiv {
     position: relative;
-    width: 1280px; /* Ancho fijo para el contenedor */
-    margin-top: 40px; /* Si deseas separar la tabla de otros elementos */
+    width: 1280px; 
+    margin-top: 40px; 
     margin-left: 100px;
   }
 
   .tablaBase {
-    width: 100%; /* Ancho de la tabla debe ocupar el 100% del contenedor */
-    table-layout: fixed; /* Hace que las celdas ocupen todo el ancho disponible */
-    border-spacing: 20px; /* Espacio entre celdas */
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 20px; 
     border-bottom: 0px solid #e8e5e5;
     font-family: Roboto;
     font-size: 24px;
@@ -438,7 +465,7 @@ Estilos para pantallas entre 1025 y MONITOR --->
     padding: 6px;
     color: #004a98;
     text-align: center;
-    word-wrap: break-word; /* Asegura que el contenido largo se ajuste dentro de las celdas */
+    word-wrap: break-word;
   }
 
   td {
@@ -452,13 +479,13 @@ Estilos para pantallas entre 1025 y MONITOR --->
 
 
   .icono {
-    margin: 0 10px; /* Espaciado horizontal entre iconos */
-    font-size: 18px; /* Tamaño de los iconos */
-    cursor: pointer; /* Cambia el cursor cuando pasas sobre los iconos */
+    margin: 0 10px; 
+    font-size: 18px; 
+    cursor: pointer; 
 }
 
 .icono:hover {
-    color: #007BFF; /* Cambia el color al pasar el mouse */
+    color: #007BFF; 
 }
 
   .contacts-sidebar {
@@ -571,7 +598,7 @@ Estilos para pantallas entre 1025 y MONITOR --->
 }
 .contact-item:hover {
   color: white!important;
-  background-color: rgba(0, 74, 152, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 74, 152, 0.5); 
 }
 
 .contact-name:hover {
@@ -666,11 +693,11 @@ height: 24px;
 .chat-item {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido principal horizontalmente */
+  justify-content: center; 
   padding: 10px 20px;
   cursor: pointer;
   width: 95%;
-  position: relative; /* Para manejar la posición del avatar */
+  position: relative; 
 }
 
 .chat-avatar {
@@ -682,15 +709,15 @@ height: 24px;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  position: absolute; /* Posición absoluta dentro de .chat-item */
-  left: 20px; /* Asegura que quede pegado al lado izquierdo */
+  position: absolute; 
+  left: 20px; 
 }
 
 .chat-name {
   font-size: 24px;
   color: #004a98;
   text-align: center;
-  flex: 1; /* Ocupa el espacio restante para centrar */
+  flex: 1; 
 }
 
 .containerTeclado{
@@ -715,8 +742,8 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     width: 744px;
     background-color: #004a98;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .cuadroContHeader {
@@ -763,8 +790,8 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     font-family: Roboto;
     font-size: 20px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .iconoUser {
@@ -776,12 +803,12 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     height: 47px;
     color: #d8d8d8;
     border: 0px solid black;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   .iconoUser i {
-    font-size: 40px; /* Ajusta el tamaño del icono según sea necesario */
+    font-size: 40px; 
   }
 
   .botonHambu {
@@ -792,9 +819,9 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     height: 48px;
     border: 0px solid black;
     color: white;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
 
   .botonHambu i {
@@ -805,22 +832,38 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%; /* Ajusta al tamaño de la tablet */
+    width: 90%; 
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    grid-gap: 50px; /* Espaciado entre las tarjetas */
-    overflow-y: scroll; /* Habilitar scroll vertical */
-    height: 100%; /* Ajusta al tamaño de la pantalla */
-    max-height: 744px; /* Altura máxima para tablets */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 50px; 
+    overflow-y: scroll; 
+    height: 100%; 
+    max-height: 744px; 
     padding: 10px;
-    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    box-sizing: border-box; 
   }
   
   .card {
-    width: 100%; /* Ajusta automáticamente al tamaño del contenedor */
+    width: 100%; 
     height: 241px;
     border-radius: 10px;
     background-color: #e8e5e5;
+  }
+
+  .Card:hover {
+    width: 302px;
+    height: 241px;
+    border-radius: 10px;
+    background-color: #004a98;
+    color:#e8e5e5;
+  }
+
+  .Card:hover .tituloCard,
+  .Card:hover .icon-list-item,
+  .Card:hover .tituloPorcentaje,
+  .Card:hover .icon-list-item i,
+  .Card:hover .icon-list-item span{
+      color: #e8e5e5; 
   }
   
   .tituloCard {
@@ -829,17 +872,28 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     color: #004a98;
   }
   
-  img {
+  .contenedorimagen{
     width: 113px;
     height: 69px;
     margin-top: -5px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    align-items: center;
+    margin-left: 95px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  img {
+    width: 54px;
+    height: 54px;
+    margin-top: 6px;
+    align-items: center;
+    margin-left: 30px;
+    border-radius: 5px;
   }
   
   .icon-list {
-    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    list-style: none; 
     padding: 0;
     text-align: center;
   }
@@ -849,9 +903,9 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
   }
   
   .icon-list-item .text-style {
-    font-size: 18px; /* Ajusta el tamaño de fuente */
-    font-family: Roboto; /* Cambia la familia de fuente */
-    color: #004a98; /* Cambia el color del texto */
+    font-size: 18px; 
+    font-family: Roboto; 
+    color: #004a98; 
   }
   
   .tituloPorcentaje {
@@ -932,20 +986,20 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
   .icon-list2 {
     width: 302px;
     height: 40px;
-    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    list-style: none; 
     padding: 5px;
     margin-top: 60px;
     margin-left: 25px;
-    text-align: center; /* Centra horizontalmente el texto */
-    display: flex; /* Habilita flexbox */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
   .icon-list-item2 i {
     display: none;
-    margin-left: 190px; /* Optional: Adjust space between icon and text */
+    margin-left: 190px; 
     margin-top: 50px;
   }
 
@@ -956,14 +1010,14 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     margin-top: 10px;
     margin-left: 25px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas */
-    grid-template-rows: auto auto; /* Crea 2 filas */
-    grid-gap: 10px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto; 
+    grid-gap: 10px; 
   }
   
   .btnDetalle {
-    grid-column: 1; /* Coloca el primer div en la primera columna */
-    grid-row: 1; /* Coloca el primer div en la primera fila */
+    grid-column: 1; 
+    grid-row: 1; 
     width: 302px;
     height: 40px;
     background: white;
@@ -977,8 +1031,8 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
   }
   
   .btnCodigo {
-    grid-column: 2; /* Coloca el segundo div en la segunda columna */
-    grid-row: 1; /* Coloca el segundo div en la primera fila */
+    grid-column: 2; 
+    grid-row: 1; 
     width: 302px;
     height: 40px;
     background: white;
@@ -992,8 +1046,8 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
   }
   
   .btnPorcentaje {
-    grid-column: 1 / 3; /* Coloca el tercer div a través de ambas columnas */
-    grid-row: 2; /* Coloca el tercer div en la segunda fila */
+    grid-column: 1 / 3; 
+    grid-row: 2; 
     width: 302px;
     height: 40px;
     margin-left: 180px;
@@ -1016,16 +1070,16 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
 
   .containerRegreso a {
     text-decoration: none;
-    color: inherit; /* Mantiene el color del texto original */
+    color: inherit; 
 }
 
   /* LISTAS DE TEMAS */
   .listaDivTemas {
     display: flex;
-    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    flex-wrap: wrap; 
     margin-left: 110px;
-    overflow-y: auto; /* Permite el scroll vertical en el contenedor */
-    height: 500px; /* Definir el alto fijo para el contenedor */
+    overflow-y: auto; 
+    height: 500px; 
   }
   
   .listaCardsTemas {
@@ -1037,7 +1091,7 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     color: white;
     border: 1px solid black;
     text-align: left;
-    background-color: #003885; /* Azul más oscuro para el div */
+    background-color: #003885; 
     padding: 20px 30px;
     flex: 1;
   }
@@ -1073,7 +1127,7 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     font-size: 16px;
     margin-bottom: 10px;
     padding: 5px;
-    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); 
   }
   
   .check {
@@ -1098,7 +1152,7 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
   }
   
 
-  /* Contenedor Numerador */
+  
   .containerNumPag {
     width: 405px;
     height: 55px;
@@ -1130,27 +1184,28 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     border: 1px solid rgb(161, 161, 161);
   }
 
-  .btnFI.clicked,
-  .btn1.clicked,
-  .btn2.clicked,
-  .btn3.clicked,
-  .btn4.clicked,
-  .btnFD.clicked {
-    background: #004a98;
-    color: white;
+  .btnFI:hover,
+  .btn1:hover,
+  .btn2:hover,
+  .btn3:hover,
+  .btn4:hover,
+  .btnFD:hover {
+      background: #004a98; 
+      color: white; 
+      border-color: #004a98;
   }
   /* TablasBases */
   .tablaBaseDiv {
     position: relative;
-    width: 680px; /* Ancho fijo para el contenedor */
-    margin-top: 40px; /* Si deseas separar la tabla de otros elementos */
+    width: 680px; 
+    margin-top: 40px; 
     margin-left: 35px;
   }
 
   .tablaBase {
-    width: 100%; /* Ancho de la tabla debe ocupar el 100% del contenedor */
-    table-layout: fixed; /* Hace que las celdas ocupen todo el ancho disponible */
-    border-spacing: 30px; /* Espacio entre celdas */
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 30px; 
     border-bottom: 0px solid #e8e5e5;
     font-family: Roboto;
     font-size: 18px;
@@ -1169,7 +1224,7 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
     padding: 3px;
     color: #004a98;
     text-align: center;
-    word-wrap: break-word; /* Asegura que el contenido largo se ajuste dentro de las celdas */
+    word-wrap: break-word; 
   }
 
   td {
@@ -1187,9 +1242,9 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
 
 
   .icono {
-    margin: 0 10px; /* Espaciado horizontal entre iconos */
-    font-size: 25px; /* Tamaño de los iconos */
-    cursor: pointer; /* Cambia el cursor cuando pasas sobre los iconos */
+    margin: 0 10px;
+    font-size: 25px; 
+    cursor: pointer; 
 }
 
 .icono.E{
@@ -1197,7 +1252,7 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
 }
 
 .icono:hover {
-    color: #007BFF; /* Cambia el color al pasar el mouse */
+    color: #007BFF; 
 }
 
   .contacts-sidebar {
@@ -1310,7 +1365,7 @@ Estilos para pantallas entre 680px y 1024px (TABLETAS)
 }
 .contact-item:hover {
   color: white!important;
-  background-color: rgba(0, 74, 152, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 74, 152, 0.5); 
 }
 
 .contact-name:hover {
@@ -1404,11 +1459,11 @@ height: 24px;
 .chat-item {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido principal horizontalmente */
+  justify-content: center; 
   padding: 10px 20px;
   cursor: pointer;
   width: 95%;
-  position: relative; /* Para manejar la posición del avatar */
+  position: relative; 
 }
 
 .chat-avatar {
@@ -1420,15 +1475,15 @@ height: 24px;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  position: absolute; /* Posición absoluta dentro de .chat-item */
-  left: 20px; /* Asegura que quede pegado al lado izquierdo */
+  position: absolute; 
+  left: 20px; 
 }
 
 .chat-name {
   font-size: 18px;
   color: #004a98;
   text-align: center;
-  flex: 1; /* Ocupa el espacio restante para centrar */
+  flex: 1; 
 }
 
  /* teclado */
@@ -1440,11 +1495,7 @@ height: 24px;
 .keyboard {
    margin-top: 13px;
    width: 744px;
-   /* height: 338px; */
-   /* background-color: #e0e0e0; */
    border-radius: 6px;
-   /* padding: 5px; */
-   /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
 }
 .row {
    display: flex;
@@ -1502,8 +1553,8 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     width: 375px;
     background-color: #004a98;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .cuadroContHeader {
@@ -1550,8 +1601,8 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     font-family: Roboto;
     font-size: 12px;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .iconoUser {
@@ -1563,12 +1614,12 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     height: 47px;
     color: #d8d8d8;
     border: 0px solid black;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   .iconoUser i {
-    font-size: 40px; /* Ajusta el tamaño del icono según sea necesario */
+    font-size: 40px; 
   }
 
   .botonHambu {
@@ -1579,9 +1630,9 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     height: 48px;
     border: 0px solid black;
     color: white;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
 
   .botonHambu i {
@@ -1592,22 +1643,38 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%; /* Ajusta al tamaño de la tablet */
+    width: 90%; 
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 50px; /* Espaciado entre las tarjetas */
-    overflow-y: scroll; /* Habilitar scroll vertical */
-    height: 100%; /* Ajusta al tamaño de la pantalla */
-    max-height: 375px; /* Altura máxima para tablets */
+    grid-gap: 50px; 
+    overflow-y: scroll; 
+    height: 100%; 
+    max-height: 375px; 
     padding: 10px;
-    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    box-sizing: border-box; 
   }
   
   .card {
-    width: 100%; /* Ajusta automáticamente al tamaño del contenedor */
+    width: 100%; 
     height: 241px;
     border-radius: 10px;
     background-color: #e8e5e5;
+  }
+
+  .Card:hover {
+    width: 302px;
+    height: 241px;
+    border-radius: 10px;
+    background-color: #004a98;
+    color:#e8e5e5;
+  }
+
+  .Card:hover .tituloCard,
+  .Card:hover .icon-list-item,
+  .Card:hover .tituloPorcentaje,
+  .Card:hover .icon-list-item i,
+  .Card:hover .icon-list-item span{
+      color: #e8e5e5; 
   }
   
   .tituloCard {
@@ -1616,17 +1683,28 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     color: #004a98;
   }
   
-  img {
+  .contenedorimagen{
     width: 113px;
     height: 69px;
     margin-top: -5px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    align-items: center;
+    margin-left: 95px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+  }
+
+  img {
+    width: 54px;
+    height: 54px;
+    margin-top: 6px;
+    align-items: center;
+    margin-left: 30px;
+    border-radius: 5px;
   }
   
   .icon-list {
-    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    list-style: none; 
     padding: 0;
     text-align: center;
   }
@@ -1636,9 +1714,9 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   }
   
   .icon-list-item .text-style {
-    font-size: 18px; /* Ajusta el tamaño de fuente */
-    font-family: Roboto; /* Cambia la familia de fuente */
-    color: #004a98; /* Cambia el color del texto */
+    font-size: 18px; 
+    font-family: Roboto; 
+    color: #004a98; 
   }
   
   .tituloPorcentaje {
@@ -1669,8 +1747,8 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   margin-top: 20px;
   margin-left: 10px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-  grid-template-rows: auto auto; /* Dos filas */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: auto auto; 
   gap: 20px;
 }
 
@@ -1695,7 +1773,6 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Para cuando los botones son clickeados */
 .btnCursos.clicked,
 .btnAlumnos.clicked,
 .btnChat.clicked,
@@ -1705,36 +1782,35 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   color: white;
 }
 
-/* Ajuste para la fila superior (botones 1, 2 y 3) */
 .btnCursos {
-  grid-column: 1; /* Primer columna */
-  grid-row: 1; /* Fila 1 */
+  grid-column: 1; 
+  grid-row: 1; 
 }
 
 .btnAlumnos {
   margin-left: -60px;
-  grid-column: 2; /* Segunda columna */
-  grid-row: 1; /* Fila 1 */
+  grid-column: 2; 
+  grid-row: 1; 
 }
 
 .btnTareas {
   margin-left: -60px;
-  grid-column: 3; /* Tercer columna */
-  grid-row: 1; /* Fila 1 */
+  grid-column: 3; 
+  grid-row: 1; 
 }
 
 .btnMaterial {
   margin-left: 60px;
-  grid-column: 1; /* Segunda columna */
-  grid-row: 2; /* Fila 2 */
-}
-/* Ajuste para la fila inferior (botones 4 y 5) */
-.btnChat {
-  grid-column: 2; /* Primera columna */
-  grid-row: 2; /* Fila 2 */
+  grid-column: 1; 
+  grid-row: 2; 
 }
 
-  /* Flecha y Detalles */
+.btnChat {
+  grid-column: 2; 
+  grid-row: 2; 
+}
+
+  
   .containerRegreso{
     display: none;
   }
@@ -1742,20 +1818,21 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   .icon-list2 {
     width: 100px;
     height: 40px;
-    list-style: none; /* Elimina las viñetas predeterminadas de la lista */
+    list-style: none; 
     padding: 5px;
     margin-top: 60px;
     margin-left: 25px;
-    text-align: center; /* Centra horizontalmente el texto */
-    display: flex; /* Habilita flexbox */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
+
   .icon-list-item2 i {
     display: none;
-    margin-left: 190px; /* Optional: Adjust space between icon and text */
+    margin-left: 190px; 
     margin-top: 50px;
   }
 
@@ -1767,15 +1844,15 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     margin-top: 10px;
     margin-left: 25px;
     
-    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas */
-    grid-template-rows: auto auto; /* Crea 2 filas */
-    grid-gap: 10px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
   }
 
   
   .btnDetalle {
-    grid-column: 1; /* Coloca el primer div en la primera columna */
-    grid-row: 1; /* Coloca el primer div en la primera fila */
+    grid-column: 1;
+    grid-row: 1; 
     width: 302px;
     height: 40px;
     background: white;
@@ -1789,8 +1866,8 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   }
   
   .btnCodigo {
-    grid-column: 2; /* Coloca el segundo div en la segunda columna */
-    grid-row: 1; /* Coloca el segundo div en la primera fila */
+    grid-column: 2;
+    grid-row: 1; 
     width: 302px;
     height: 40px;
     background: white;
@@ -1804,8 +1881,8 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   }
   
   .btnPorcentaje {
-    grid-column: 1 / 3; /* Coloca el tercer div a través de ambas columnas */
-    grid-row: 2; /* Coloca el tercer div en la segunda fila */
+    grid-column: 1 / 3; 
+    grid-row: 2; 
     width: 302px;
     height: 40px;
     margin-left: 180px;
@@ -1829,10 +1906,10 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
   /* LISTAS DE TEMAS */
   .listaDivTemas {
     display: flex;
-    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    flex-wrap: wrap; 
     margin-left: 50px;
-    overflow-y: auto; /* Permite el scroll vertical en el contenedor */
-    height: 419px; /* Definir el alto fijo para el contenedor */
+    overflow-y: auto; 
+    height: 419px; 
   }
   
   .listaCardsTemas {
@@ -1844,7 +1921,7 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     color: white;
     border: 1px solid black;
     text-align: left;
-    background-color: #003885; /* Azul más oscuro para el div */
+    background-color: #003885; 
     flex: 1;
   }
   
@@ -1879,7 +1956,7 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     font-size: 12px;
     margin-bottom: 10px;
     padding: 5px;
-    border-bottom: 0px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2); 
   }
   
   .check {
@@ -1936,27 +2013,28 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     border: 1px solid rgb(161, 161, 161);
   }
 
-  .btnFI.clicked,
-  .btn1.clicked,
-  .btn2.clicked,
-  .btn3.clicked,
-  .btn4.clicked,
-  .btnFD.clicked {
-    background: #004a98;
-    color: white;
+  .btnFI:hover,
+  .btn1:hover,
+  .btn2:hover,
+  .btn3:hover,
+  .btn4:hover,
+  .btnFD:hover {
+      background: #004a98;
+      color: white;
+      border-color: #004a98; 
   }
   /* TablasBases */
   .tablaBaseDiv {
     position: relative;
-    width: 375px; /* Ancho fijo para el contenedor */
-    margin-top: 20px; /* Si deseas separar la tabla de otros elementos */
+    width: 375px; 
+    margin-top: 20px; 
     margin-left: 0px;
   }
 
   .tablaBase {
-    width: 100%; /* Ancho de la tabla debe ocupar el 100% del contenedor */
-    table-layout: fixed; /* Hace que las celdas ocupen todo el ancho disponible */
-    border-spacing: 3px; /* Espacio entre celdas */
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 3px; 
     border-bottom: 0px solid #e8e5e5;
     font-family: Roboto;
     font-size: 12px;
@@ -1975,7 +2053,7 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
     padding: 11px;
     color: #004a98;
     text-align: center;
-    word-wrap: break-word; /* Asegura que el contenido largo se ajuste dentro de las celdas */
+    word-wrap: break-word; 
   }
 
   td {
@@ -1993,19 +2071,17 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
 
 
   .icono {
-    margin: 0 10px; /* Espaciado horizontal entre iconos */
-    font-size: 20px; /* Tamaño de los iconos */
-    cursor: pointer; /* Cambia el cursor cuando pasas sobre los iconos */
-}
-
+    margin: 0 10px; 
+    font-size: 20px; 
+    cursor: pointer; 
+  }
 .icono.E{
   display: none;
 }
 
 .icono:hover {
-    color: #007BFF; /* Cambia el color al pasar el mouse */
+    color: #007BFF; 
 }
-
   .contacts-sidebar {
     width: 303px;
     background-color: white;
@@ -2119,9 +2195,8 @@ Estilos para pantallas entre 1px y 679px MOVIL --->
 }
 .contact-item:hover {
   color: white!important;
-  background-color: rgba(0, 74, 152, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 74, 152, 0.5); 
 }
-
 .contact-name:hover {
   color: white!important;
 }
@@ -2213,13 +2288,11 @@ height: 24px;
 .chat-item {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra el contenido principal horizontalmente */
-  padding: 10px 20px;
+  justify-content: center; 
   cursor: pointer;
   width: 95%;
-  position: relative; /* Para manejar la posición del avatar */
+  position: relative; 
 }
-
 .chat-avatar {
   width: 41px;
   height: 41px;
@@ -2229,15 +2302,15 @@ height: 24px;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  position: absolute; /* Posición absoluta dentro de .chat-item */
-  left: 20px; /* Asegura que quede pegado al lado izquierdo */
+  position: absolute; 
+  left: 20px; 
 }
 
 .chat-name {
   font-size: 18px;
   color: #004a98;
   text-align: center;
-  flex: 1; /* Ocupa el espacio restante para centrar */
+  flex: 1; 
 }
 
 .containerTeclado,
