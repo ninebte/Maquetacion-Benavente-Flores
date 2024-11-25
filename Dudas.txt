@@ -1,0 +1,6 @@
+Puntos faltantes:
+A la consideración del figma en el diseño del Dashboard se puede apreciar bien los componentes y sus variantes, pero en el handOff necesita específiccar un poco más ciertas funciones de los botones y sus vistas de lo que hacen.
+En este caso paso en los botones de:
+	Usuario: que está en el header pero ¿A donde lleva muestra una nueva vista de los datos del usuario o aparece un modal encima de la vista de los Cursos?
+	Menu hamburguesa: se explica que es lo que hace pero no se ve una vista de como sería la función del botón.
+	También el boton de editar, ¿Nos llevará a una nueva vista o aparecerá un modal?
